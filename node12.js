@@ -19,6 +19,6 @@ fs.unlink('./Raghav/writeMe.txt',function(){
     So, basically in the fs module we have fileRead, fileWrite, readFile ,writeFile, we can directly remove a directory only if 
     the directory is empty. This is indeed great.
 
-
+    This was all for Day 1, i will catch you in the next week.
 
 */
