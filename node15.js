@@ -24,7 +24,8 @@ So, now comes as to what basically are streams:
 var http = require('http');
 var fs = require('fs');
 
-var myReadStream = fs.createReadStream(__dirname+'/readMe.txt');
+var myReadStream = fs.createReadStream(__dirname+'/readMe.txt','utf8');
 myReadStream.on('data',function(chunk){
     console.log("New Chunk Received: "+chunk);
 })
+//So, this is basically how we wil create a stream and use the data.

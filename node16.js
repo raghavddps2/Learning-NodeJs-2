@@ -17,6 +17,8 @@ myReadStream.on('data',function(chunk){
 //We did the same using writeFile and readFile, nbut the difference is we are diving into pieces of chunk, so this is the benefi
 //reading data like that.
 
+//We can do this even quicker, by using something called as pipes.
+
 //next to do the same, we have something called as files, 
 
 //Everytime we receive a chunk of data, we will write it to the writeStream.
