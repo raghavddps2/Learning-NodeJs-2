@@ -12,4 +12,19 @@ So, now comes as to what basically are streams:
     Basically, using streams increases the performance.
 
     Now, Moving furthur we will be looking for streams much in detail.
+    Some basically we have readable, writable and duplex streams.
+    
+    So,first basically, we are gonna see writable streams, when we are writing data to the server, and if node was
+    receiving data from somewhere, we are gonna talk about readable streams, and duplex streams can do both of that pretty well.
+
+
+    
 */
+
+var http = require('http');
+var fs = require('fs');
+
+var myReadStream = fs.createReadStream(__dirname+'/readMe.txt');
+myReadStream.on('data',function(chunk){
+    console.log("New Chunk Received: "+chunk);
+})
