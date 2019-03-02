@@ -30,5 +30,10 @@
         any file during the development of our application, we actually have no need to chnage anything, 
         The server is automatically restrated, so this basically reduces the load for restarting the server again and again.
 
-        Now to start this you will not use node (app name), instead you will use nodemon (appname).js;
+        Now to start this you will not use node (app name), instead you will use nodemon (appname).js
+        npm install -g nodemon;
+
+        So, nodemon will be a much better way of working while using nodeJs.
+
+
 */
