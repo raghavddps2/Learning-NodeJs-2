@@ -3,6 +3,11 @@
     can send HTML pages for the same.
 
 
+    //Now we will see what we want to see from like some years as to how we can display dynamic content, like from a database.
+    //This is done using something called as Templating engines. We can inject the dynamic content using a templating
+    // engine called as ejs(Embedded javascript)
+    ejs is basically a light weight templating engine for the same and we can learn more about ejs on embeddedjs.com
+
 
 */
 
