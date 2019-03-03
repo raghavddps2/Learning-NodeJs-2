@@ -30,7 +30,7 @@ app.get('/contact',function(req,res){
 app.get('/profile/:userName',function(req,res){
     // res.send('The id of your profile you requested is: '+req.params.id);
     //To do that in ejs we use something called as res.render()
-    var data = {age: 29, job: 'ninja'};
+    var data = {age: 29, job: 'ninja',hobbies:['eating','fighting','fishing']};
     res.render('profile',{userName: req.params.userName, data: data}); //This will by default look into a folder called as views.
 })
 
