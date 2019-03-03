@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demo Page.
+        </title>
+        <style>
+            body{
+                background: skyblue;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #fff;
+                padding: 30px;
+            }
+            h1{
+                font-size: 48px;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            p{
+                font-size: 16px;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Welcome to the profile of <%= userName %></h1>
+        <p><strong>Age: <%= data.age %></strong></p>
+        <p><strong>Job: <%= data.job %></strong></p>
+    </body>
+</html>
+
+<!--
+    //Here we are gonna put our dynamic content
+    The syntax for getting the same is:
+        <%=    %> //This is the syntax for getting the object properties from there.(the javascript file).
+-->
