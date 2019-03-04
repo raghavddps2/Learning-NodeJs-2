@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Demo Page.
+            Info Page
         </title>
         <style>
             body{
@@ -32,14 +32,16 @@
     </head>
 
     <body>
+        <% include partials/nav.ejs %> 
+        <!-- This will include the navabar we desined there. -->
         <h1>Welcome to the profile of <%= userName %></h1>
         <p><strong>Age: <%= data.age %></strong></p>
-        <p><strong>Job: <%= data.job %></strong></p>
-        <h2>Hobbies:</h2>
+        <p><strong>Profession: <%= data.profession %></strong></p>
+        <h2>Hobbies: </h2>
         <ul>
             <% data.hobbies.forEach(function(hobbie){ %>
                 <li><%= hobbie %></li>
-          <%  }) %>
+          <%  })  %>
         </ul>
     </body>
 </html>
@@ -52,4 +54,13 @@
         Whereas the upper one is used for outputting data.
 -->
 
+<!--
+    Now supposing that we have Something common everytime in every page, say a navbar is common for all the pages, what we can simply do is basically
+    use the same navbar. how to do that is followed in this tutorial
+    --The benefits for the smae are as follows. The major advantage is that, consider for example that we
+        don't have to write the code again and again and second and a major advantage is that, We necessarily don't have
+        to chnage it evertime.
 
+        To use that into our code, what we basically have the include statement.<% %>
+        So, basically include statement and the directory
+-->
